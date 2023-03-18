@@ -1,0 +1,4 @@
+﻿  Data_Structures.cpp
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures\Data_Structures\Data_Structures.cpp(37,11): error C2131: expression did not evaluate to a constant
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures\Data_Structures\Data_Structures.cpp(37,11): message : failure was caused by a read of a variable outside its lifetime
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures\Data_Structures\Data_Structures.cpp(37,11): message : see usage of 'n'
