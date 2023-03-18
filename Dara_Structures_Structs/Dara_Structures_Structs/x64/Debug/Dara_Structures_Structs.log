@@ -1,0 +1,4 @@
+﻿  Dara_Structures_Structs.cpp
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Dara_Structures_Structs\Dara_Structures_Structs\Dara_Structures_Structs.cpp(21,12): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Dara_Structures_Structs\Dara_Structures_Structs\Dara_Structures_Structs.cpp(21,12): message : consider using '%zu' in the format string
+  Dara_Structures_Structs.vcxproj -> D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Dara_Structures_Structs\x64\Debug\Dara_Structures_Structs.exe

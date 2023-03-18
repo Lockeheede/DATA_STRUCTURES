@@ -1,5 +1,5 @@
-// Data_Structures.cpp : This file contains the 'main' function. Program execution begins and ends there.
-// Array Basics
+// Data_Structures_Arrays.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 1 Array Basics
 
 #include <iostream>
 #include <stdio.h>
@@ -33,9 +33,9 @@ int main()
     for (int x : B)
         cout << x << endl;//foreach loop. X is now the index of whatever the array size is
 
-    int n;
-    cout << "Enter Size: ";
-    cin >> n;
+    //int n;
+    //cout << "Enter Size: ";
+    //cin >> n;
     //int E[n]; You cannot initalize the variable size. And some compilers do not compile them at all.
 }
 

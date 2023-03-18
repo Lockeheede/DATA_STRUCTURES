@@ -1,0 +1,6 @@
+﻿  Data_Structures_Pointers.cpp
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures_Pointers\Data_Structures_Pointers\Data_Structures_Pointers.cpp(20,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures_Pointers\Data_Structures_Pointers\Data_Structures_Pointers.cpp(20,9): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'int *'
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures_Pointers\Data_Structures_Pointers\Data_Structures_Pointers.cpp(22,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures_Pointers\Data_Structures_Pointers\Data_Structures_Pointers.cpp(22,9): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'int *'
+  Data_Structures_Pointers.vcxproj -> D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures_Pointers\x64\Debug\Data_Structures_Pointers.exe
