@@ -1,0 +1,7 @@
+﻿  Data_Structures_Templates.cpp
+D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures\Data_Structures_Templates\Data_Structures_Templates\Data_Structures_Templates.cpp(44,38): warning C4305: 'argument': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+  Data_Structures_Templates.vcxproj -> D:\02_School\01_Learning\Programming\0_OnOwn\C++\Projects\Data_Structures\Data_Structures_Templates\x64\Debug\Data_Structures_Templates.exe
