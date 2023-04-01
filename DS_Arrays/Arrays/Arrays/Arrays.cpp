@@ -4,6 +4,8 @@
 //Note use pointer * for the arrays when you are modifying them, and values if not. See different functions...
 
 #include <iostream>
+#include <cstdlib>
+#include <cstdio>
 
 void ResizeArrays();
 void TwoDArrays();
@@ -20,7 +22,7 @@ void swap(int* x, int* y)
 //ADT
 struct Array
 {
-	int A[10];
+	int *A;
 	int size;
 	int length;
 };
@@ -89,8 +91,8 @@ int LinearSearch(struct Array *arr, int key)
 			
 			
 			//Move to Front/Head
-			swap(&arr->A[i], &arr->A[0]);
-			return 0;
+			//swap(&arr->A[i], &arr->A[0]);
+			return i;
 		}
 	}
 	return -1;//Invalid index being returned so the function doesn't give you an index in the array. This is to say it failed.
@@ -383,6 +385,7 @@ struct Array* Difference(struct Array* arr1, struct Array* arr2)
 	return arr3;
 }
 
+
 int main()
 {	//Functions
 	//ResizeArrays();
@@ -390,7 +393,7 @@ int main()
 	//TwoDArrays();
 	
 	//Array ADT
-	struct Array arr = { {2,4,6,8,10},10,5 };
+	/*struct Array* arr = new Array; { {2, 4, 6, 8, 10}, 10, 5 };
 	struct Array arr2 = { {-3, -5, -7, 9, 11, -13, -15, 17, 19}, 18, 9 };
 
 	//Merging Arrays
@@ -401,7 +404,7 @@ int main()
 	//Unsorted Arrays
 	struct Array arr6 = { {5, 3, 7, 1, 9}, 10, 5 };
 	struct Array arr7 = { {2, 3, 4, 10, 1}, 10, 5 };
-
+	*/
 
 
 
@@ -422,7 +425,7 @@ int main()
 	arr.length = n;*/
 
 	//Append(&arr, 12);
-	//Insert(&arr, 5, 12);
+	//Insert(arr, 5, 12);
 	//printf("%d\n", Delete(&arr, 4));
 	//printf("%d\n", LinearSearch(&arr, 10));
 	//printf("%d\n", BinarySearch(arr, 6));
@@ -452,8 +455,64 @@ int main()
 	//arr5 = Intersection(&arr3, &arr4);
 	//arr5 = Difference(&arr3, &arr4);
 
+	//Display(*arr);
 
-	Display(*arr5);
+	struct Array arr1;
+	int choice;
+	int x, index;
+
+	printf("What is the size of the array? ");
+	scanf_s("%d", &arr1.size);
+	arr1.A = (int *) malloc(arr1.size*sizeof(int));
+	//Initalizing the arr with values that are not garbage. 
+	arr1.length = arr1.size;
+
+	for (int i = 0; i < arr1.length; i++)
+	{
+		arr1.A[i] = 0;
+	}
+	
+
+	do
+	{
+	printf("Menu\n");
+	printf("1. Insert\n");
+	printf("2. Delete\n");
+	printf("3. Search\n");
+	printf("4. Sum\n");
+	printf("5. Display\n");
+	printf("6. Exit\n");
+
+	printf("Enter Your Choice: ");
+	scanf_s("%d", &choice);
+
+	switch (choice)
+	{
+	case 1: printf("Enter an element and index ");
+		scanf_s("%d%d", &x, &index);
+		Insert(&arr1, index, x);
+		std::cout << std::endl;
+		break;
+	case 2: printf("Enter index ");
+		scanf_s("%d", &index);
+		x = Delete(&arr1, index);
+		printf("Deleted Element Is %d\n", x);
+		std::cout << std::endl;
+		break;
+	case 3: printf("Enter element to search ");
+		scanf_s("%d", &x);
+		index = LinearSearch(&arr1, x);
+		printf("Element index %d\n", index);
+		std::cout << std::endl;
+		break;
+	case 4: printf("Sum is %d\n", Sum(arr1));
+		std::cout << std::endl;
+		break;
+	case 5: Display(arr1);
+		std::cout << std::endl;
+	}
+
+	} while (choice < 6);
 }
 
 void ResizeArrays()
